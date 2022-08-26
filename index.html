@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="score_contaier">
+            Score:<span id="score">0</span>
+        </div>
+        <div id="body_container">
+            <img src="./images/image.png" alt="" width="200px" height="200px" style="margin-left: 200px">
+            <h1 style="text-align: center;">Ai là triệu phú?</h1>
+            <div id="question_container">
+                <span id="question">Câu hỏi</span>
+            </div>
+            <div id="answer_container">
+                <div class="answer" onclick="checkAnswer(0)">
+                    <span class="head"></span>
+                </div>
+                <div class="answer" onclick="checkAnswer(1)">
+                    <span class="head"></span>
+                </div>
+                <div class="answer" onclick="checkAnswer(2)">
+                    <span class="head"></span>
+                </div>
+                <div class="answer" onclick="checkAnswer(3)">
+                    <span class="head"></span>
+                </div>
+            </div>
+            <div id="btn_container">
+                <button class="btn" onclick="stopPlaying()">Dừng cuộc chơi</button>
+
+                <button class="btn" onclick="next()">Câu tiếp theo</button>
+            </div>
+
+        </div>
+        <div id="rate_container">
+            <span>Rate</span>
+            <div class="rate"><span>100</span></div>
+            <div class="rate"><span>300</span></div>
+            <div class="rate"><span>500</span></div>
+            <div class="rate"><span>1000</span></div>
+            <div class="rate"><span>10000</span></div>
+            <div class="rate"><span>70000</span></div>
+            <div class="rate"><span>90000</span></div>
+            <div class="rate"><span>100000</span></div>
+            <div class="rate"><span>120000</span></div>
+            <div class="rate"><span>150000</span></div>
+        </div>
+    </div>
+    <!-- <audio loop autoplay src="audio/ailatrieuphu.mp3">
+    </audio> -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>
